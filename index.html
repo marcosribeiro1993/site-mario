@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Super Mario Bros - Dev Club">
+    </audio>
+    <script defer src="./script.js"></script>
+    <title>Super Mario Bros - Dev Club</title>
+</head>
+
+<body>
+
+    <div class="video-box">
+        <video src="./video.mp4" autoplay muted loop></video>
+        <div class="mask-box"></div>
+    </div>
+
+    <div class="default-box">
+        <img class="mario-logo" src="./logo.png" alt="The Super Mario Bros Logo">
+        <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
+            ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
+            vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+        <button onclick="buttonClick()">Fale Conosco</button>
+    </div>
+
+    <img class="mario-luigi" src="./mario.png" alt="Mario e Luigi">
+
+    <form class="contact-us" action="https://formsubmit.co/brayansoaresdeaguiar@gmail.com" method="post">
+        <h1>Fale Conosco</h1>
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu telefone " type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema aqui" name="informações"></textarea>
+        <button type="submit" onclick="sendForm()">Enviar Informações</button>
+    </form>
+
+    <div class="form-mask"></div>
+</body>
+
+</html>
